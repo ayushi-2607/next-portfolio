@@ -5,3 +5,9 @@
 body {
   @apply bg-background font-sans; /* Apply your custom background and text color */
 }
+.h1{
+  @apply text-[20px] md:text-[40px]  leading-[1.1] font-bold
+}
+.h2{
+  @apply text-[10px] md:text-[20px] font-semibold
+}
