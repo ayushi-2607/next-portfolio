@@ -1,6 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
-const MainPhoto = () => {
+const ProfilePicture = () => {
     return (
 
         <div>
@@ -15,4 +15,4 @@ const MainPhoto = () => {
     )
 }
 
-export default MainPhoto
+export default ProfilePicture
