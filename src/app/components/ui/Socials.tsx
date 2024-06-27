@@ -9,7 +9,7 @@ const Socials = () => {
       {socials.map((item, index) => {
         const IconComponent = item.icon;
         return (
-          <div key={index} className="p-2 rounded-full border-2 duration-300 transform hover:scale-125 hover:shadow-lg">
+          <div key={index} className="p-3 rounded-full border-4 duration-300 transform hover:scale-125 hover:shadow-lg bg-[#C2C1C2]">
             <Link href={item.path} passHref>
               
                 <IconComponent size={30} />
