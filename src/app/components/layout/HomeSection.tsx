@@ -11,8 +11,8 @@ const Home = () => {
     <section className='h-full'>
       <div className="container mx-auto">
         <div className='flex flex-col md:flex-row items-center md:pt-8 md:pb-24'>
-          <div className='md:ml-20'><ProfilePicture /></div>
-          <div className='text-center md:ml-60'>
+          <div className='mt-5 sm:mt-5 md:mt-0 md:ml-20'><ProfilePicture /></div>
+          <div className='text-center md:ml-60 mt-1'>
             <span className="h1 ">Hello I'm</span><br />
             <span className="h1 text-[#1a1a5c]">Ayushi Lonkar</span>
             <h2 className='h2'>Senior Software Engineer <br /> at HSBC </h2><br />
