@@ -6,6 +6,14 @@ import Socials from '../ui/Socials';
 import Link from "next/link"
 import { FaGithub, FaLinkedinIn, FaYoutube, FaTwitter } from 'react-icons/fa'
 const Home = () => {
+  const handleDownloadResume = () => {
+    const link = document.createElement('a');
+    link.href = '/AYUSHI_LONKAR_RESUME.pdf'; 
+    link.download = 'AYUSHI_LONKAR_RESUME.pdf'; 
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
   
   return (
     <section className='h-full'>
@@ -18,7 +26,7 @@ const Home = () => {
             <h2 className='h2'>Senior Software Engineer <br /> at HSBC </h2><br />
             <p className='max-w-[500px] mb-7'>Versatile DevOps and Full Stack Developer experienced in both business operations and production support. Skilled in crafting CI/CD pipelines, scalable applications, and data visualizations</p>
 
-            <button className="px-4 py-2 text-white bg-[#1a1a5c] hover:bg-[#3E3EA7] shadow-lg rounded mt-5 duration-300 transform hover:scale-125 hover:shadow-lg">
+            <button className="px-4 py-2 text-white bg-[#1a1a5c] hover:bg-[#3E3EA7] shadow-lg rounded mt-5 duration-300 transform hover:scale-125 hover:shadow-lg" onClick={handleDownloadResume}>
               <div className="flex items-center space-x-2 ">
                 <FaDownload />
                 <span>Download Resume</span>
