@@ -8,7 +8,7 @@ const Education = () => {
 
     return (
         <div className="max-w-4xl mx-auto my-8 p-4">
-            <h2 className="text-4xl font-bold text-center text-[#1A1A5C] mb-8">Education</h2>
+            <h2 className="text-4xl font-bold text-center mb-8">Education</h2>
             <div className="max-w-4xl mx-auto space-y-6">
                 {educationList.map((edu, index) => (
                     <Link key={index} href={edu.link}>
