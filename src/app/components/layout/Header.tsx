@@ -9,12 +9,13 @@ import { NAV_ITEMS } from '@/constants/data/navitems';
 const Header = () => {
   const [navVariable, setNavBar] = useState(false);
   return (
+    
     <header className='w-full mx-auto bg-nav text-white'>
       <div className='justify-between md:items-center md:flex'>
         <div className="flex items-center justify-between py-3 md:py-5 md:block">
           <div>
 
-            <h2 className='ml-2 text-2xl font-bold'><Link href="/" className = "hover:text-background">My Portfolio </Link></h2>
+            <h2 className='ml-2 text-2xl font-bold'><Link href="/" className="hover:text-background">My Portfolio </Link></h2>
 
           </div>
           <div className='md:hidden' onClick={() => { setNavBar(!navVariable) }}>

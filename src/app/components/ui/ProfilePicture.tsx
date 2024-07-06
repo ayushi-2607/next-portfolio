@@ -4,26 +4,6 @@ import Image from 'next/image'
 const ProfilePicture = () => {
     return (
 
-        // <div className="">
-        //     <motion.div
-        //         className="rounded"
-        //         initial={{opacity:0}}
-        //         // animate={{ rotate: 360 }}
-        //         animate = {{
-        //             opacity:1,
-        //             transition:{ delay:2, duration: 0.4, ease: "easeIn" }
-        //         }}
-                
-        //     >
-        //         <Image
-        //             src="/sample_image.jpg"
-        //             alt="A description of the image"
-        //             width={300}
-        //             height={300}
-        //             className="rounded"
-        //         />
-        //     </motion.div>
-        // </div>
         <div className="">
             <motion.div
                 className="rounded-full overflow-hidden mt-0 sm:mt-20 md:mt-0"

@@ -1,61 +1,7 @@
 "use client"
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-
-const experiences = [
-  {
-    company: "HSBC",
-    logo: "/hsbc_logo.png",
-    positions: [
-      {
-        position: "Senior Software Engineer",
-        duration: "Jul 2023 - Present",
-        description: "Pune, India",
-        responsibilities: [
-          "Lead the development team.",
-          "Architected new features.",
-          "Conducted code reviews."
-        ]
-      },
-      {
-        position: "Software Engineer",
-        duration: "Jan 2022 - Jul 2023",
-        description: "Pune, India",
-        responsibilities: [
-          "Developed new application features.",
-          "Fixed bugs and improved performance.",
-          "Collaborated with cross-functional teams."
-        ]
-      },
-      {
-        position: "Trainee Software Engineer",
-        duration: "Aug 2021 - Dec 2021",
-        description: "Pune, India",
-        responsibilities: [
-          "Developed new application features.",
-          "Fixed bugs and improved performance.",
-          "Collaborated with cross-functional teams."
-        ]
-      }
-    ]
-  },
-  {
-    company: "bluCursor Infotech Pvt Ltd",
-    logo: "/blucursor_logo.jpg",
-    positions: [
-      {
-        position: "Intern",
-        duration: "Jan 2020 - Mar 2020",
-        description: "Indore, India",
-        responsibilities: [
-          "Assisted in software development.",
-          "Participated in code reviews.",
-          "Wrote unit tests."
-        ]
-      }
-    ]
-  }
-];
+import { experiences } from '@/constants/data/experience';
 
 type Position = {
   position: string;
@@ -64,17 +10,22 @@ type Position = {
   responsibilities: string[];
 };
 
-const ExperienceSection: React.FC = () => {
+const ExperienceSection = () => {
   const [hoveredPosition, setHoveredPosition] = useState<Position | null>(null);
 
   return (
-    <div className="max-w-4xl mx-auto py-8">
-      <h2 className="text-4xl font-bold mb-8 text-center">Experience</h2>
+    
+    <div className="max-w-6xl mx-auto py-8">
       {experiences.map((exp, index) => (
+        <motion.div
+                
+        animate={{ boxShadow: ["0 0 10px #334365", "0 0 10px #334365", "0 0 10px #334365"] }}
+        transition={{ duration: 2, repeat: Infinity }}
+    >
         <div key={index} className="relative mb-12 bg-white shadow-lg rounded-lg p-8">
           <img
             src={exp.logo}
-            alt={`${exp.company} logo`}
+            alt="logo"
             className="absolute top-2 left-3 w-15 h-20"
           />
           <div className="ml-24">
@@ -94,8 +45,8 @@ const ExperienceSection: React.FC = () => {
                   <div className="flex flex-col md:flex-row">
                     <div className="md:mb-0 md:mr-8">
                       <h4 className="text-xl font-semibold text-[#413D3E]">{position.position}</h4>
-                      <p className="text-[#1A1A5C] italic">{position.duration}</p>
-                      <p className="text-gray-500 italic ">{position.description}</p>
+                      <p className="text-gray-600 italic">{position.duration}</p>
+                      <p className="text-gray-400 italic ">{position.description}</p>
                     </div>
                   </div>
                 </div>
@@ -107,19 +58,21 @@ const ExperienceSection: React.FC = () => {
               initial={{ opacity: 0, x: 100 }}
               animate={{ opacity: 1, x: 0 }}
               exit={{ opacity: 0, x: 100 }}
-              className="absolute top-0 right-0 w-1/3 p-6 bg-white shadow-lg rounded-lg"
+              className="md:absolute md:top-2  md:right-11 md:w-1/2 p-5 bg-[#334365] shadow-lg rounded-lg mt-4 md:mt-0"
             >
-              <h4 className="text-xl font-semibold mb-4">{hoveredPosition.position} Responsibilities</h4>
+              <h4 className="text-xl text-white font-semibold mb-4">{hoveredPosition.position} Responsibilities</h4>
               <ul className="list-disc list-inside space-y-2">
                 {hoveredPosition.responsibilities.map((item, index) => (
-                  <li key={index} className="text-gray-700">{item}</li>
+                  <li key={index} className="text-gray-200 font-thin">{item}</li>
                 ))}
               </ul>
             </motion.div>
           )}
         </div>
+        </motion.div>
       ))}
     </div>
+   
   );
 };
 

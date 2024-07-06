@@ -10,16 +10,16 @@ interface NavItem {
       page: "about",
     },
     {
+      label: "Experience",
+      page: "experience",
+    },
+    {
       label: "Education",
       page: "education",
     },
     {
       label: "Projects",
       page: "projects",
-    },
-    {
-      label: "Experience",
-      page: "experience",
     },
     {
       label: "Contact",
