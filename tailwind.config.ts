@@ -15,6 +15,7 @@ const config: Config = {
       fontFamily: {
         sans: ['Georgia', 'serif'], 
       },
+      
     },
   },
   plugins: [],

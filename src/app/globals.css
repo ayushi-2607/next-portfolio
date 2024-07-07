@@ -12,7 +12,14 @@ body {
   @apply text-[15px] md:text-[20px] font-semibold
 }
 
-.hover\\:border-neon:hover {
-  border-color: #39ff14; /* Fluorescent green color */
-  box-shadow: 0 0 10px #39ff14, 0 0 20px #39ff14, 0 0 30px #39ff14, 0 0 40px #39ff14;
+/* .list-item-dot::before {
+  content: '•';
+  color: yellow; 
+  font-weight: bold;
+  display: inline-block; 
+  width: 2em;
+  margin-left: 2em;
+} */
+.animate-pulse {
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) ;
 }
