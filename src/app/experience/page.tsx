@@ -1,6 +1,6 @@
 "use client"
 import React, { useState } from 'react';
-import { motion } from 'framer-motion';
+import { easeIn, motion } from 'framer-motion';
 import { experiences } from '@/constants/data/experience';
 
 type Position = {
@@ -58,9 +58,10 @@ const ExperienceSection = () => {
               initial={{ opacity: 0, x: 100 }}
               animate={{ opacity: 1, x: 0 }}
               exit={{ opacity: 0, x: 100 }}
-              className="md:absolute md:top-2  md:right-11 md:w-1/2 p-5 bg-[#334365] shadow-lg rounded-lg mt-4 md:mt-0"
+              transition={{ duration: 0.8, ease: easeIn}}
+              className="md:absolute md:top-2  md:right-11 md:w-1/2 p-5 bg-gray-700 shadow-lg rounded-lg mt-4 md:mt-0"
             >
-              <h4 className="text-xl text-white font-semibold mb-4">{hoveredPosition.position} Responsibilities</h4>
+              <h4 className="text-xl text-yellow-400 font-semibold mb-4">{hoveredPosition.position} Responsibilities</h4>
               <ul className="list-disc list-inside space-y-2">
                 {hoveredPosition.responsibilities.map((item, index) => (
                   <li key={index} className="text-gray-200 font-thin">{item}</li>
