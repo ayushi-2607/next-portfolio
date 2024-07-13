@@ -2,7 +2,9 @@
 import React, { useState } from 'react';
 import { easeIn, motion } from 'framer-motion';
 import { experiences } from '@/constants/data/experience';
-
+import { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 type Position = {
   position: string;
   duration: string;
@@ -11,6 +13,11 @@ type Position = {
 };
 
 const ExperienceSection = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000, // Animation duration in milliseconds
+    });
+  }, []);
   const [hoveredPosition, setHoveredPosition] = useState<Position | null>(null);
 
   return (
@@ -21,6 +28,7 @@ const ExperienceSection = () => {
                 
         animate={{ boxShadow: ["0 0 10px #334365", "0 0 10px #334365", "0 0 10px #334365"] }}
         transition={{ duration: 2, repeat: Infinity }}
+        data-aos="fade-up"
     >
         <div key={index} className="relative mb-12 bg-white shadow-lg rounded-lg p-8">
           <img

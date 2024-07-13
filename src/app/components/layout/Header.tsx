@@ -15,7 +15,7 @@ const Header = () => {
         <div className="flex items-center justify-between py-3 md:py-5 md:block">
           <div>
 
-            <h2 className='ml-2 text-2xl font-bold'><Link href="/" className="hover:text-background">My Portfolio </Link></h2>
+            <h2 className='ml-2 text-2xl font-bold'><Link href="/" className="hover:text-yellow-400 ml-2">AYUSHI</Link></h2>
 
           </div>
           <div className='md:hidden' onClick={() => { setNavBar(!navVariable) }}>
@@ -28,13 +28,13 @@ const Header = () => {
         <div className={`flex-1 justify-self-center pb-3 mt-8 md:block md:pb-0 md:mt-0 ${navVariable ? "block" : "hidden"
           }`}>
           <div>
-            <div className='items-center justify-end space-y-3 md:flex md:space-x-6 md:space-y-0 mr-2'>
+            <div className='items-center justify-end space-y-3 md:flex md:space-x-6 md:space-y-0 mr-2 ml-3'>
               {NAV_ITEMS.map((item, index) => {
                 return (
                   <Link
                     href={`/${item.page}`}
                     className={
-                      "block lg:inline-block  hover:text-background"
+                      "block lg:inline-block hover:text-yellow-400"
                     }
 
                     onClick={() => setNavBar(!navVariable)}
