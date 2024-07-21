@@ -25,7 +25,7 @@ const ExperienceSection = () => {
     <div className="max-w-6xl mx-auto py-8">
       {experiences.map((exp, index) => (
         <motion.div
-                
+        key={index}     
         animate={{ boxShadow: ["0 0 10px #334365", "0 0 10px #334365", "0 0 10px #334365"] }}
         transition={{ duration: 2, repeat: Infinity }}
         data-aos="fade-up"

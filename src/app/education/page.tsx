@@ -12,7 +12,7 @@ const Education = () => {
             
                 {educationList.map((edu, index) => (
                     <motion.div
-                
+                    key={index}
                     animate={{ boxShadow: ["0 0 10px #334365", "0 0 10px #334365", "0 0 10px #334365"] }}
                     transition={{ duration: 2, repeat: Infinity }}
                 >

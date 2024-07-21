@@ -12,7 +12,7 @@ const Footer = () => {
         const IconComponent = item.icon;
         return (
           
-          <a href={item.path} target="_blank" rel="noopener noreferrer"><IconComponent size ={25}/></a>
+          <a key={index} href={item.path} target="_blank" rel="noopener noreferrer"><IconComponent size ={25}/></a>
         );
       })}
       

@@ -129,7 +129,7 @@ const About = () => {
             >
              
               <ul className='text-white space-y-3' >
-                 {achievements.map((ach, posIndex) => ( <li className='list-disc'>{ach} </li>))}
+                 {achievements.map((ach, posIndex) => ( <li key={posIndex} className='list-disc'>{ach} </li>))}
                 
               </ul>
 

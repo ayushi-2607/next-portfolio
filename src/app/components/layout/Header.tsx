@@ -32,6 +32,7 @@ const Header = () => {
               {NAV_ITEMS.map((item, index) => {
                 return (
                   <Link
+                    key={index}
                     href={`/${item.page}`}
                     className={
                       "block lg:inline-block hover:text-yellow-400"
