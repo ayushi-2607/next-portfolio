@@ -13,9 +13,9 @@ export default function ContactForm() {
         message: '',
     });
 
-    const [status, setStatus] = useState(null);
+    const [status, setStatus] = useState('');
 
-    const handleChange = (e) => {
+    const handleChange = (e: { target: { name: any; value: any; }; }) => {
         const { name, value } = e.target;
         setFormData({
             ...formData,
@@ -23,7 +23,7 @@ export default function ContactForm() {
         });
     };
 
-    const handleSubmit = async (e) => {
+    const handleSubmit = async (e: { preventDefault: () => void; }) => {
         e.preventDefault();
         setStatus('sending');
         console.log("Form DATA", formData);
@@ -83,7 +83,7 @@ export default function ContactForm() {
                                 className="w-full p-3 bg-gray-800 text-white border border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-500"
                                 name="message"
                                 placeholder="Your Message"
-                                rows="5"
+                                rows={5}
                                 value={formData.message}
                                 onChange={handleChange}
                                 required
