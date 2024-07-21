@@ -12,10 +12,8 @@
     "aos": "^2.3.4",
     "emailjs-com": "^3.2.0",
     "next": "14.2.4",
-    "particles-bg": "^2.5.5",
     "react": "^18",
-    "react-dom": "^18",
-    "react-particles-js": "^3.6.0"
+    "react-dom": "^18"
   },
   "devDependencies": {
     "@types/node": "^20",
