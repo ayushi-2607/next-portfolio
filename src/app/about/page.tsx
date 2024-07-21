@@ -33,7 +33,7 @@ const About = () => {
 
               <Image
                 src="/about_image.jpg"
-                alt="Edward Devis"
+                alt="Ayushi"
                 className="rounded "
                 width={1200}
                 height={1200}
@@ -47,7 +47,7 @@ const About = () => {
               className="bg-gray-900 p-6 rounded-md"
             >
 
-              <h1 className="text-4xl font-bold mb-2">Hi There! I'm Ayushi Lonkar</h1>
+              <h1 className="text-4xl font-bold mb-2">Hi There! I am Ayushi Lonkar</h1>
               <h2 className="text-xl text-yellow-500 mb-4  ">Full Stack Developer</h2>
               <p className="mb-4">
                 I am a passionate learner having <strong className='text-xl'>3 yrs </strong>of Experience with a relentless drive to acquire new skills and broaden my knowledge.
@@ -116,7 +116,7 @@ const About = () => {
       <br/>
       <br/>
       <span >
-      <strong>Dancing and cooking</strong> are two activities that bring me immense joy. Whether it's expressing myself through dance or experimenting with new recipes in the kitchen, these hobbies allow me to explore my creativity and bring happiness to myself and others.
+      <strong>Dancing and cooking</strong> are two activities that bring me immense joy. Whether it is expressing myself through dance or experimenting with new recipes in the kitchen, these hobbies allow me to explore my creativity and bring happiness to myself and others.
       </span >
       </div>
       <div className='flex max-w-6xl ml-10 mt-10 items-center'>
