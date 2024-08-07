@@ -44,7 +44,7 @@ const About = () => {
               initial={{ x: 100, opacity: 0 }}
               animate={{ opacity: 1, x: 0, boxShadow: ["0 0 10px #334365", "0 0 10px #334365", "0 0 10px #334365"] }}
               transition={{ duration: 0.8, ease: easeIn }}
-              className="bg-gray-900 p-6 rounded-md"
+              className="bg-gray-600 p-6 rounded-md"
             >
 
               <h1 className="text-4xl font-bold mb-2">Hi There! I am Ayushi Lonkar</h1>
@@ -56,7 +56,6 @@ const About = () => {
               </p>
               <ul className='font-thin'>
                 <li><strong>Date of Birth:</strong> July 26, 2000</li>
-                <li><strong>Phone:</strong> +91 9109044554</li>
                 <li><strong>Email:</strong> lonkarayushi@gmail.com</li>
                 <li><strong>From:</strong> Indore, India</li>
                 <li><strong>Language:</strong> English, Hindi, Marathi</li>
@@ -85,7 +84,7 @@ const About = () => {
 
             animate={{ boxShadow: ["0 0 10px #334365", "0 0 10px #334365", "0 0 10px #334365"] }}
 
-            key={category} className="bg-gray-800 p-6 rounded-lg shadow-lg" data-aos="fade-up">
+            key={category} className="bg-gray-600 p-6 rounded-lg shadow-lg" data-aos="fade-up">
             <h3 className="text-xl font-semibold text-yellow-500 mb-4">{category}</h3>
             <p className="text-base text-white">
               {items.join(', ')}
@@ -104,7 +103,7 @@ const About = () => {
         </h2>
 
       </div>
-      <div  className="max-w-6xl m-10 mt-0 text-gray-800">
+      <div  className="max-w-6xl m-10 mt-0 text-gray-600">
       <span >
       <strong>Music</strong> holds a special place in my heart. With classical training, I have successfully cleared three exams from Akhil Bhartiya Gandharva Mahavidyalaya. My passion has led me to win music competitions at the state level. I also had the privilege of leading the music team in college and performing at various corporate events, showcasing my dedication and love for music
       </span>
@@ -125,7 +124,7 @@ const About = () => {
              
               animate={{ boxShadow: ["0 0 10px #334365", "0 0 10px #334365", "0 0 10px #334365"] }}
              
-              className="bg-gray-900 p-8 rounded-md  " 
+              className="bg-gray-600 p-8 rounded-md  " 
             >
              
               <ul className='text-white space-y-3' >

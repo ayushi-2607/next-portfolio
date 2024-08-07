@@ -42,7 +42,7 @@ export default function ContactForm() {
             <motion.div
 
                 animate={{ boxShadow: ["0 0 10px #334365", "0 0 10px #334365", "0 0 10px #334365"] }}
-                className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 bg-gray-700 p-6 rounded-lg">
+                className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 bg-gray-600 p-6 rounded-lg">
                 <div>
                     <form onSubmit={handleSubmit} className="space-y-6">
                         <div>
@@ -95,7 +95,7 @@ export default function ContactForm() {
                         >
                             {status === 'sending' ? 'Sending...' : 'Send Message'}
                         </button>
-                        {status === 'sent' && <p className="text-green-500 mt-4">Message sent successfully!</p>}
+                        {status === 'sent' && <p className="text-green-500 mt-4">Message Sent! Will get back to you shortly.</p>}
                         {status === 'error' && <p className="text-red-500 mt-4">Failed to send message. Please try again.</p>}
                     </form>
                 </div>

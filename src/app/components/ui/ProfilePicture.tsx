@@ -12,7 +12,7 @@ const ProfilePicture = () => {
             >
                 <div className="w-48 h-48 sm:w-40 sm:h-40 md:w-64 md:h-64 lg:w-80 lg:h-80 rounded-full overflow-hidden">
                     <Image
-                        src="/sample_image.jpg"
+                        src="/ayushi_image.jpg"
                         alt="A description of the image"
                         width={400}
                         height={400}

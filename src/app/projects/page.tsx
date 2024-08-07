@@ -21,7 +21,7 @@ export default function Home() {
 
                         animate={{ boxShadow: ["0 0 10px #334365", "0 0 10px #334365", "0 0 10px #334365"] }}
             
-                        key={index} className="bg-gray-800 p-6 rounded-lg shadow-lg" data-aos="fade-up">
+                        key={index} className="bg-gray-600 p-6 rounded-lg shadow-lg" data-aos="fade-up">
                         {/* <div key={index} className="bg-gray-800 p-6 rounded-lg shadow-lg" data-aos="fade-up"> */}
                             <h3 className="text-2xl font-semibold text-yellow-500 mb-4">{project.title}</h3>
                             <p className="text-base mb-4"> {project.objective}</p>
