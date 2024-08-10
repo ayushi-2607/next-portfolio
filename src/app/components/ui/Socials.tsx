@@ -12,7 +12,8 @@ const Socials = () => {
           <div key={index} className="p-3 rounded-full border-4 duration-300 transform hover:scale-125 hover:shadow-lg bg-[#C2C1C2]">
             <Link href={item.path} passHref>
               
-                <IconComponent size={30} />
+                <IconComponent size={30} 
+                />
            
             </Link>
           </div>

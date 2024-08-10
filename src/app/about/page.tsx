@@ -105,7 +105,7 @@ const About = () => {
       </div>
       <div  className="max-w-6xl m-10 mt-0 text-gray-600">
       <span >
-      <strong>Music</strong> holds a special place in my heart. With classical training, I have successfully cleared three exams from Akhil Bhartiya Gandharva Mahavidyalaya. My passion has led me to win music competitions at the state level. I also had the privilege of leading the music team in college and performing at various corporate events, showcasing my dedication and love for music
+      <strong>Music</strong> holds a special place in my heart. With classical training, I have successfully cleared three exams from <strong>Akhil Bhartiya Gandharva Mahavidyalaya</strong>. My passion has led me to win music competitions at the state level. I also had the privilege of leading the music team in college and performing at various corporate events, showcasing my dedication and love for music
       </span>
       <br/>
       <br/>
